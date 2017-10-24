@@ -18,8 +18,8 @@ input {
   100% {transform: rotate(0deg)}
 }
 .error { /* only change properties that do not change position or size. Keep the UI stable. */
-  border-color: orange;
-  /*animation: shake 0.2s 2;*/
+  border-color: red;
+  animation: shake 0.2s 2;
 }
 .padded { /* for vertical alignment of fieldset and result */
   padding: 1em;

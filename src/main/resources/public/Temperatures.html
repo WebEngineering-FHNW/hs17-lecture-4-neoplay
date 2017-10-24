@@ -21,7 +21,7 @@
         <div>
             <label for='celsius'>Celsius</label>
             <input type="number decimal" name="celsius" value="0.0"
-                   required="true" min="1.0" max="6.0" id="celsius"
+                   required="true" id="celsius"
                    onchange="document.getElementById('fahrenheit').value = celsiusToFahrenheit(value);"
             />
         </div>
@@ -29,9 +29,9 @@
         <div>
             <label for='fahrenheit'>Fahrenheit</label>
             <input type="number decimal" name="fahrenheit" value="0.0"
-                   required="true" min="1.0" max="6.0" id="fahrenheit"
+                   required="true" id="fahrenheit"
+                   onchange="document.getElementById('celsius').value = fahrenheitToCelsius(value);"
             />
-            <!--TODO: make value changes of fahrenheit update the celsius field-->
         </div>
 
     </fieldset>
